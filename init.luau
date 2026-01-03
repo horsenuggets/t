@@ -1,1 +1,1 @@
-require("@self/lib")
+return require("@self/lib")
