@@ -7,6 +7,15 @@ authors = ["Osyris"]
 realm = "shared"
 registry = "https://github.com/upliftgames/wally-index"
 exclude = ["*"]
-include = ["lib", "lib/init.lua", "default.project.json", "LICENSE", "README.md", "wally.toml", ".luaurc", "init.luau"]
+include = [
+    ".luaurc",
+    "default.project.json",
+    "init.luau",
+    "lib",
+    "lib/init.lua",
+    "LICENSE",
+    "README.md",
+    "wally.toml",
+]
 
 [dependencies]
