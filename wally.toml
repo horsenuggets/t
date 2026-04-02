@@ -11,11 +11,14 @@ include = [
     ".luaurc",
     "default.project.json",
     "init.luau",
-    "lib",
-    "lib/init.lua",
     "LICENSE",
     "README.md",
+    "Source",
+    "Source/**",
     "wally.toml",
 ]
 
 [dependencies]
+
+[dev-dependencies]
+Testable = "horsenuggets/testable@1.1.2"

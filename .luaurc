@@ -1,3 +1,25 @@
 {
+    "aliases": {
+        "devpackages": "./DevPackages/",
+        "lune": "~/.lune/.typedefs/0.10.4-horse.14.5/",
+        "packages": "./Packages/",
+        "t": "./Source/t/",
+        "tests": "./Tests/"
+    },
+    "globals": [
+        "afterAll",
+        "afterEach",
+        "beforeAll",
+        "beforeEach",
+        "describe",
+        "elapsedTime",
+        "expect",
+        "fail",
+        "fdescribe",
+        "fit",
+        "it",
+        "xdescribe",
+        "xit"
+    ],
     "languageMode": "nonstrict"
 }

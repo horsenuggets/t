@@ -1,6 +1,6 @@
 {
-  "name": "t",
-  "tree": {
-    "$path": "lib"
-  }
+    "name": "t",
+    "tree": {
+        "$path": "Source/t"
+    }
 }

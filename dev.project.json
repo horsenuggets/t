@@ -1,0 +1,30 @@
+{
+    "name": "t-dev",
+    "tree": {
+        "$className": "Folder",
+        "DevPackages": {
+            "$path": {
+                "optional": "DevPackages"
+            }
+        },
+        "Packages": {
+            "$path": {
+                "optional": "Packages"
+            }
+        },
+        "Scripts": {
+            "$path": "Scripts"
+        },
+        "ServerPackages": {
+            "$path": {
+                "optional": "ServerPackages"
+            }
+        },
+        "Source": {
+            "$path": "Source"
+        },
+        "Tests": {
+            "$path": "Tests"
+        }
+    }
+}

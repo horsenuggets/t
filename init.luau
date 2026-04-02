@@ -1,1 +1,1 @@
-return require("@self/lib")
+return require("@self/Source/t")

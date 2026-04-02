@@ -1,5 +1,5 @@
 return function()
-	local t = require(script.Parent)
+	local t = require("@t")
 
 	it("should support type checking with type()", function()
 		assert(t.type("nil")(nil))
