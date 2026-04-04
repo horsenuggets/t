@@ -1,14 +1,13 @@
 [package]
 name = "horsenuggets/t"
 description = "A Runtime Typechecker for Roblox"
-version = "3.1.1-horse.0.4"
+version = "3.1.1-horse.0.5"
 license = "MIT"
 authors = ["Osyris"]
 realm = "shared"
 registry = "https://github.com/upliftgames/wally-index"
 exclude = ["*"]
 include = [
-    ".luaurc",
     "default.project.json",
     "init.luau",
     "LICENSE",
@@ -21,4 +20,4 @@ include = [
 [dependencies]
 
 [dev-dependencies]
-Testable = "horsenuggets/testable@1.1.2"
+Testable = "horsenuggets/testable@1.1.3"
