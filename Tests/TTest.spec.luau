@@ -1,3 +1,12 @@
+--[[
+
+TTest.spec
+
+Test spec for the t runtime typechecking library. Exercises every public predicate
+and combinator to confirm both the positive and negative paths behave as documented.
+
+--]]
+
 return function()
     local t = require("@t")
 
@@ -356,10 +365,10 @@ return function()
 
     -- TODO: Add this back when Lemur supports it
     -- it("should support Roblox RBXScriptConnection", function()
-    -- 	local conn = game.ChildAdded:Connect(function() end)
-    -- 	assert(t.RBXScriptConnection(conn))
-    -- 	assert(not (t.RBXScriptConnection(nil)))
-    -- 	assert(not (t.RBXScriptConnection(Vector3.new())))
+    --  local conn = game.ChildAdded:Connect(function() end)
+    --  assert(t.RBXScriptConnection(conn))
+    --  assert(not (t.RBXScriptConnection(nil)))
+    --  assert(not (t.RBXScriptConnection(Vector3.new())))
     -- end)
 
     it("should support wrapping function types", function()
