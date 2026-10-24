@@ -64,8 +64,8 @@ jobs:
       - name: Run tests
         run: lune run ./Scripts/RunTests.exec.luau
 
-  lint:
-    name: Run lint
+  analyze:
+    name: Static analysis
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
