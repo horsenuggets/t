@@ -49,9 +49,10 @@ jobs:
 
       - name: Check diff with main
         run: |
-          git fetch origin master
+          git fetch origin main
 
-          DIFF=$(git diff origin/master..HEAD)
+          # Get the diff between the PR branch and main
+          DIFF=$(git diff origin/main..HEAD)
 
           if [ -n "$DIFF" ]; then
             echo "::error::PR branch has changes that differ from main. The release branch must contain exactly what is in main."
