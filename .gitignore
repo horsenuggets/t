@@ -37,6 +37,11 @@ aftman.toml
 # Repo-specific
 node_modules
 
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+
 # Worktrees
 /.worktrees/
 /.wt/
