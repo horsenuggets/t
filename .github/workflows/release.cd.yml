@@ -25,8 +25,8 @@ jobs:
         id: version
         run: |
           VERSION=$(cat VERSION | tr -d '[:space:]')
-          echo "version=$VERSION" >> $GITHUB_OUTPUT
-          echo "tag=$VERSION" >> $GITHUB_OUTPUT
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "tag=$VERSION" >> "$GITHUB_OUTPUT"
 
           # Extract changelog for this version
           CHANGELOG=$(awk -v ver="$VERSION" '
