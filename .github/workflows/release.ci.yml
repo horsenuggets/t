@@ -28,19 +28,18 @@ jobs:
     name: validate-pr-title
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Setup Rokit
+        uses: CompeyDev/setup-rokit@v0.1.2
+
       - name: Check PR title format
         env:
           TITLE: ${{ github.event.pull_request.title }}
-        run: |
-          echo "Checking PR title: $TITLE"
-
-          # Must be "Release <version>" where version starts with a digit
-          if [[ ! "$TITLE" =~ ^Release\ [0-9] ]]; then
-            echo "::error::PR title must be 'Release <version>' (e.g., 'Release 3.1.1-horse.0.4')"
-            exit 1
-          fi
-
-          echo "PR title is valid."
+        run: lune run ./Submodules/luau-cicd/Scripts/CheckReleaseTitle.exec.luau "$TITLE"
 
   verify-diff-matches-main:
     name: verify-diff-matches-main
