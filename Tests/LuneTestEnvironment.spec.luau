@@ -7,9 +7,11 @@ upstream tests and skips the ones that can't run under Lune.
 
 --]]
 
+const Testable = require("@devpackages/Testable")
+const it = Testable.it
+
 return function()
     const LuneTestEnvironment = require("../Scripts/Helpers/LuneTestEnvironment")
-    const Testable = require("@devpackages/Testable")
     const t = require("@t")
 
     const SKIP = Testable.TestEnum.NodeModifier.Skip

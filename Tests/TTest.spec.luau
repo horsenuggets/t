@@ -7,6 +7,9 @@ and combinator to confirm both the positive and negative paths behave as documen
 
 --]]
 
+const Testable = require("@devpackages/Testable")
+const describe, it = Testable.describe, Testable.it
+
 return function()
     local t = require("@t")
 
