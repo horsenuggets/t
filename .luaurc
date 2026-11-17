@@ -8,23 +8,10 @@
         "tests": "./Tests/"
     },
     "globals": [
-        "afterAll",
-        "afterEach",
-        "beforeAll",
-        "beforeEach",
-        "describe",
-        "elapsedTime",
         "Enum",
-        "expect",
-        "fail",
-        "fdescribe",
-        "fit",
         "game",
         "Instance",
-        "it",
-        "project",
-        "xdescribe",
-        "xit"
+        "project"
     ],
     "languageMode": "nonstrict"
 }
