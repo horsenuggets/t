@@ -1,6 +1,6 @@
 {
     "[luau]": {
-        "editor.defaultFormatter": "JohnnyMorganz.stylua",
+        "editor.defaultFormatter": "horsenuggets.styluau",
         "editor.formatOnSave": true
     },
     "luau-lsp.completion.autocompleteEnd": true,
